@@ -23,10 +23,13 @@ public class Solution {
     }
 
     public static long getTimeMsOfGet(List list) {
-        //напишите тут ваш код
+        Date currentTime = new Date();
 
         get10000(list);
-
+        
+        Date afterTime = new Date();
+        long dif = afterTime.getTime() - currentTime.getTime();
+        return dif;
         //напишите тут ваш код
 
     }
